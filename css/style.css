@@ -52,7 +52,7 @@ nav a:hover {
         justify-content: space-evenly; 
     }     		 
 }
-header, main, footer {
+header, nav, main, footer {
     margin: 1.25rem auto;
     padding: 1rem;
     max-width: 800px;
