@@ -6,6 +6,20 @@ body {
     font-size:1rem;
     font-weight: 300;
 }
+.h1-test {
+    font-family: 'Lato', 'Segoe UI';
+    font-size: 40px;
+    font-weight: 700;
+}
+.h2-test {
+    font-family: 'Lato', 'Segoe UI';
+    font-size: 30px;
+    font-weight: 600;
+}
+.p-test {
+    font-family: 'Lato', 'Segoe UI';
+    font-size: 16px;
+}
 nav {
     margin: 0.5rem;
     padding: 0 1rem;
@@ -40,17 +54,8 @@ nav a:hover {
 }
 @media only screen and (min-width: 37.5em) {
 	/* Horizontal Flex Menu */
-		nav ul { display: flex; }
+		nav ul { display: flex; justify-content: space-evenly; }
         nav ul li { flex: 1 1 100%; }
-}
-@media only screen and (min-width: 32.5em) {
-    nav ul {    
-        display: flex;
-        flex-flow: row;
-    }
-    nav ul {    
-        justify-content: space-evenly; 
-    }     		 
 }
 header, nav, main, footer {
     margin: 1.25rem auto;
@@ -103,6 +108,20 @@ text-align:center;
     border:0;
     width:88px;
     height:31px
+}
+table tr {
+    width: 100%;
+    height: 30px;
+}
+.td-left {
+    width: 30%;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+.td-right {
+    width: 70%;
+    padding: 10px;
 }
 @media only screen and (min-width: 32.5rem){
     header h1{
