@@ -27,7 +27,7 @@
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="#">Home</a></li>
-                <li class="current"><a href="#">Preston</a></li>
+                <li class="active"><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
@@ -36,15 +36,87 @@
         </nav>
     
         <main>
-            <h2 class="town-name">Preston Idaho</h2>
-        
-            <div class="section">Hero w/ weather summary</div>
-            <div class="section">5 Day Forecast</div>
-            <div class="section">Article</div>
-            <div class="section">Contact Information</div>
-            <br>
-           
+            <h1>Preston Idaho</h1>
+            <div class="hero">
+                <img id="headerimg" src="images/preston_header.jpg" alt="Preston Idaho">
+    
+                <div class="CurrentWeather">
+                    <h2 class="textwhite">Weather Summary</h2>
+                    <hr>
+    
+                    <div ><b>Current: </b><span class="textblue">Rainny</span> </div>
+                    <div ><b>High: </b><span class="textblue">44 &#186;F</span> </div>
+                    <div ><b>Wind Chill: </b><span class="textblue">37 &#186;F</span> </div>
+                    <div ><b>Humidity: </b><span class="textblue">80%</span> </div>
+                    <div ><b>Wind Speed: </b><span class="textblue">20 mph</span> </div>
+                </div> 
+            </div>
+
+            <div>
+                <h2 class="textcenter">5 Day Forecast</h2>
+                <table>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/sunny.png" alt="Cloudy weather">
+                            <br>
+                            <span class="textdarkgray">31° 45°</span>
+                        </td>
+                        <td>
+                            <img src="images/snowy.png" alt="Sunny weather">
+                            <br>
+                            <span class="textdarkgray">0° 10°</span>
+                        </td>
+                        <td>
+                            <img src="images/cloudy.png" alt="Snowy weather">
+                            <br>
+                            <span class="textdarkgray">24° 29°</span>
+                        </td>
+                        <td>
+                            <img src="images/rainny.png" alt="Rainny weather">
+                            <br>
+                            <span class="textdarkgray">25° 30°</span>
+                        </td>
+                        <td>
+                            <img src="images/cloudy.png" alt="Cloudy weather">
+                            <br>
+                            <span class="textdarkgray">24° 29°</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="ArticleSection">
+                <img src="images/preston.jpeg" alt="Image of a house" class="articleimage">
+                <h2>The historic Preston Post Office</h2>
+                <span class="authorquote">by Mario Vasquez</span>
+                <p>Velit elit nisi deserunt do ipsum enim. Amet aliqua quis excepteur in voluptate incididunt enim sunt quis officia labore eu. Sit ad cillum mollit est in cillum eu duis ex nostrud velit dolore sint. Do pariatur deserunt in ex eiusmod ea enim est reprehenderit magna tempor. Cupidatat in aliqua duis dolore ex duis. Laborum dolore Lorem eu culpa cillum velit fugiat.</p>
+
+                <p>Sint sint reprehenderit ut irure non enim sit enim in nisi. Quis voluptate culpa esse consequat duis consectetur nostrud. Labore sint in consectetur Lorem laborum sint et. Mollit labore aliqua nulla et quis eu. Consequat est dolor veniam Lorem qui sunt eiusmod commodo minim eiusmod ullamco occaecat et. Et ea excepteur anim qui sit magna elit.</p>
+
+                <p>Eiusmod cupidatat sunt nisi nisi ullamco. Laborum ea sit cillum nulla laboris ullamco excepteur aliqua nisi pariatur cillum et eiusmod. Aliquip tempor esse cillum nulla magna duis aliqua Lorem cillum aliqua. Nisi do sit laboris dolor ullamco qui ex pariatur culpa qui velit deserunt.</p>
+            </div>
+            <div class="contact">
+                <img src="images/map.png" alt="Map of Preston" class="map">
+                <h3>Contact Information</h3>
+                <p>645 N State St,</p>
+                <p> Preston, ID 83263, United States</p>
+                <p><span>&#9742; Phone Number: 555-555-555</span></p>
+                <p><span>&#9993; E-mail: info@weatheronmytown.com"</span></p>
+                <span>
+                    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" class="socialmedia"></a>
+                    <a href="https://www.twitter.com/"><img src="images/twitter.png" alt="Twitter" class="socialmedia"></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram" class="socialmedia"></a>
+                    <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="Youtube" class="socialmedia"></a>
+                </span>
+            </div>
         </main>
+
         <footer>
                 <p>© <span id="copyrightdate">2019</span> | Mario A. Vasquez | Venezuela | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
                 <p id="lastMod">Last updated: 
