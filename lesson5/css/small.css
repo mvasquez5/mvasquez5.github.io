@@ -185,3 +185,10 @@ table td {
 .contact {
     display: none;
 }
+.offer {
+    background-color: yellowgreen;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 10px;
+}
