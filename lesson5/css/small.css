@@ -179,3 +179,9 @@ table td {
     border:1px solid gray;
     border-spacing: 5px 10px;
 }
+.five-day {
+    display: none;
+}
+.contact {
+    display: none;
+}

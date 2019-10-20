@@ -4,4 +4,10 @@
     footer {
         max-width: 900px;
     }
+    .five-day {
+        display: block;
+    }
+    .contact {
+        display: block;
+    }
 }
