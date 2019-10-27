@@ -41,17 +41,21 @@
         <main>
             <h1>Preston Idaho</h1>
             <div class="hero">
-                <img id="headerimg" src="images/preston_header.jpg" alt="Preston Idaho">
+                <picture>
+                    <source media="(max-width: 320px)" srcset="images/preston_header_w320.jpg">
+                    <source media="(max-width: 768px)" srcset="images/preston_header_w768.jpg">
+                    <img id="headerimg" src="images/preston_header.jpg" alt="Preston Idaho">
+                </picture>
     
                 <div class="CurrentWeather">
                     <h2 class="textwhite">Weather Summary</h2>
                     <hr>
     
                     <div ><b>Current: </b><span class="textblue">Rainny</span> </div>
-                    <div ><b>High: </b><span class="textblue">44 &#186;F</span> </div>
-                    <div ><b>Wind Chill: </b><span class="textblue">37 &#186;F</span> </div>
+                    <div ><b>High: </b><span class="textblue" id="temp">44 &#186;F</span> </div>
+                    <div ><b>Wind Chill: </b><span class="textblue" id="windchill">37 &#186;F</span> </div>
                     <div ><b>Humidity: </b><span class="textblue">80%</span> </div>
-                    <div ><b>Wind Speed: </b><span class="textblue">20 mph</span> </div>
+                    <div ><b>Wind Speed: </b><span class="textblue" id="windSpeed">20 mph</span> </div>
                 </div> 
             </div>
 
@@ -137,5 +141,6 @@
             <span class="gr__triangle"></span>
         </span>
         <script src ="js/show_offer.js"></script>
+        <script src ="js/windchill.js"> </script>
     </body>
 </html>
