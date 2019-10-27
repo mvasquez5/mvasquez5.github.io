@@ -1,0 +1,13 @@
+/* Tablet View CSS */
+@media only screen and (min-width: 32.5em) {
+
+    footer {
+        max-width: 900px;
+    }
+    .five-day {
+        display: block;
+    }
+    .contact {
+        display: block;
+    }
+}
