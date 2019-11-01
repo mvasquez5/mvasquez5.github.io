@@ -7,52 +7,32 @@
             <title>Site Plan | Mario Vasquez | BYU-Idaho</title>
             <meta name="description" content="Assignment portal page for Mario Vasquez in CIT 230: Web Front-End Development at BYU-Idaho.">
             <link rel="shortcut icon" href="favicon.ico">
-            <link rel="stylesheet" href="css/normalize.css">
-		    <link rel="stylesheet" href="css/small.css">
-	        <link rel="stylesheet" href="css/middle.css">
-    	    <link rel="stylesheet" href="css/large.css">
-            <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    	    <link rel="stylesheet" href="css/lazyload.css">
     </head>
     <body>
         <main>
             <h1>Preston Idaho</h1>
             <div class="hero">
                 <picture>
-                    <img id="headerimg" src="images/lazzy-example1.jpg" alt="Presto Idaho">
+                    <img data-src="images/lazzy-example1.jpg" alt="Presto Idaho1">
                 </picture>
                 <picture>
-                    <img id="headerimg" src="images/lazzy-example2.jpg" alt="Presto Idaho">
+                    <img data-src="images/lazzy-example2.jpg" alt="Presto Idaho2">
                 </picture>
                 <picture>
-                    <img id="headerimg" src="images/lazzy-example3.jpg" alt="Presto Idaho">
+                    <img data-src="images/lazzy-example3.jpg" alt="Presto Idaho3">
                 </picture>
                 <picture>
-                    <img id="headerimg" src="images/lazzy-example4.jpg" alt="Presto Idaho">
+                    <img data-src="images/lazzy-example4.jpg" alt="Presto Idaho4">
                 </picture>
                 <picture>
-                    <img id="headerimg" src="images/lazzy-example5.jpg" alt="Presto Idaho">
+                    <img data-src="images/lazzy-example5.jpg" alt="Presto Idaho5">
                 </picture>
                 <picture>
-                    <img id="headerimg" src="images/lazzy-example6.jpg" alt="Presto Idaho">
+                    <img data-src="images/lazzy-example6.jpg" alt="Presto Idaho6">
                 </picture>
             </div>
         </main>
-
-        <footer>
-                <p>© <span id="copyrightdate">2019</span> | Mario A. Vasquez | Venezuela | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
-                <p id="lastMod">Last updated: 
-                        <span id="lastmodDate">09/27/2019 21:36:50</span>
-                </p>
-        </footer>
-        <p class="w3validator">
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                <img src="../img/vcss-blue.jpg" alt="Valid CSS!">
-            </a>
-        </p>
-        
-        <span class="gr__tooltip"><span class="gr__tooltip-content"></span>
-            <i class="gr__tooltip-logo"></i>
-            <span class="gr__triangle"></span>
-        </span>
+        <script src="js/imagehandling.js" defer> </script>
     </body>
 </html>
