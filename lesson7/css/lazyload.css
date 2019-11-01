@@ -24,4 +24,6 @@ picture {
   max-width:100%;
   text-align:center;
   background-image: url("../images/placeholder.jpg");
+  width: 300px;
+  height: 400px;
 }
