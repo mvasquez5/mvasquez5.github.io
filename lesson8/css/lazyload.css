@@ -1,0 +1,29 @@
+body {
+    display: grid; 
+    justify-content: center;
+    grid-auto-columns: 300px;
+    text-align: center;
+}    
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+  
+h1 {
+    font-weight: 800;
+}
+
+picture {
+  margin:20px auto;
+  display:block;
+  max-width:100%;
+  text-align:center;
+  background-image: url("../images/placeholder.jpg");
+  width: 300px;
+  height: 400px;
+}

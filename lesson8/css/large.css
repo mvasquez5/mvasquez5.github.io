@@ -1,0 +1,43 @@
+/* Wide Desktop view*/
+@media only screen and (min-width: 60em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigatoin li a {
+        color: #4D83FF;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    .ArticleSection img {
+        float: right;
+        margin: 1em;
+    }
+    .five-day {
+        display: block;
+    }
+    .contact {
+        display: block;
+    }
+
+    .gallery {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
