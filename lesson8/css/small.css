@@ -225,7 +225,7 @@ picture:hover {
 .stormcenter {
     background-color: #46E8D7;
 }
-.stormcenter label{
+.stormcenter label, legend{
     display: block;
     margin-left: 10px;
 }

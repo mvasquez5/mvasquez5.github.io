@@ -42,69 +42,66 @@
                     <div class="section">
                         <span>contact</span>Contact Information</div>
                     <div class="subsection">
-                        <label>Full Name*<input type="text" name="fullname" placeholder="" pattern="[A-z\s]{5,}" required autocomplete="off"></label>
-                        <label>Email Address<input type="email" name="email" placeholder="email@domain.com"  autocomplete="off"></label>
-                        <label>Phone Number*<input type="tel" name="phone" pattern="[0-9]+" placeholder="999999999" required autocomplete="off"></label>
-                        <label>Zip Code*<input type="text" name="zipcode" pattern="^\d{5,6}(?:[-\s]\d{4})?$" required autocomplete="off"></label>
+                        <label for="fullname">Full Name*<input type="text" name="fullname" placeholder="" pattern="[A-z\s]{5,}" required></label>
+                        <label for="email">Email Address<input type="email" name="email" placeholder="email@domain.com" ></label>
+                        <label for="phone">Phone Number*<input type="tel" name="phone" pattern="[0-9]+" placeholder="999999999" required></label>
+                        <label for="zipcode">Zip Code*<input type="text" name="zipcode" pattern="^\d{5,6}(?:[-\s]\d{4})?$" required></label>
                     </div>
     
                     <div class="section">
                         <span>report</span>Storm Report</div>
                     <div class="subsection">
-                        <label>Storm Date<input type="date" name="date"></label>
-                        <label>Storm Type<input type="text" name="stormtype" placeholder="Select Type of Storm" list="storm">
+                        <label for="date">Storm Date<input type="date" name="date"></label>
+                        <label for="stormtype">Storm Type<input type="text" name="stormtype" placeholder="Select Type of Storm" list="storm">
     
-                    <datalist id="storm">
-                        <option value = "Flash Flood"></option>
-                        <option value = "Hail"></option>
-                        <option value = "Hurricane"></option>
-                        <option value = "Thunderstorm"></option>
-                        <option value = "Tornado"></option>
-                    </datalist>
+                            <datalist id="storm">
+                                <option value = "Flash Flood"></option>
+                                <option value = "Hail"></option>
+                                <option value = "Hurricane"></option>
+                                <option value = "Thunderstorm"></option>
+                                <option value = "Tornado"></option>
+                            </datalist>
+                        </label>
+                        <label><span >Storm Severity: (1-10) > <span id="ratingvalue">5</span></span> <br>
+                            1 <input type="range" id="severity" value="5" min="1" max="10" step="1" list="sevsettings" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 10
+                            <datalist id="sevsettings">
+                                <option>1</option>   
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </datalist>
+                        </label>
 
-                    <br>
-
-                </label>
-                <label><span >Storm Severity: (1-10) > <span id="ratingvalue">5</span></span> <br>
-                    1 <input type="range" id="severity" value="5" min="1" max="10" step="1" list="sevsettings" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 10
-                    <datalist id="sevsettings">
-                        <option>1</option>   
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                    </datalist>
-                </label>
-
-                <label>
-                    Storm Region
-                        <select name="region">
-                        <option value="select" disabled selected>Select Region...</option>
-                        <option value="Preston">Preston</option>
-                        <option value="Sugar City">Sugar City</option>
-                        <option value="Fish Haven">Fish Haven</option>
-                        </select></label>
                         <label>
-                            Are You In Danger</label>
-    
-                        <label><input type="radio" name="dangerLevel" value="yes"><span class="radiotext">Yes</span></label>
-                        <label><input type="radio" name="dangerLevel" value="maybe"><span class="radiotext">Maybe</span></label>
-                        <label for="dangerLevel"><input type="radio" name="dangerLevel" value="no"><span class="radiotext">No</span></label>
+                            Storm Region
+                                <select name="region">
+                                    <option value="select" disabled selected>Select Region...</option>
+                                    <option value="Preston">Preston</option>
+                                    <option value="Sugar City">Sugar City</option>
+                                    <option value="Fish Haven">Fish Haven</option>
+                                </select>
+                        </label>
+                        <legend>Are You In Danger <em>(Choose one)</em></legend>
+                        <label for="dangerLevel1"><input type="radio" name="dangerLevel1" value="yes"><span class="radiotext">Yes</span></label>
+                        <label for="dangerLevel2"><input type="radio" name="dangerLevel2" value="maybe"><span class="radiotext">Maybe</span></label>
+                        <label for="dangerLevel3"><input type="radio" name="dangerLevel3" value="no"><span class="radiotext">No</span></label>
                     </div>
                     <div class="section">
-                        <span>additional</span>Additional Information</div>
+                        <span>additional</span>Additional Information
+                    </div>
                     <div class="subsection">
                         <label for="additionalInfo"> Comments </label>
                         <textarea name="additionalInfo"></textarea>
                     </div>
     
                     <input type="submit" value="Send Report" class="submitButton center">
-    
+                    <br>
                 </form>
             </div>
         </main>
