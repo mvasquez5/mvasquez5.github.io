@@ -11,7 +11,7 @@
         display: grid;
         margin: 0 auto;
         width: 100%;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .displaytowns {
         display: grid;
@@ -23,10 +23,6 @@
         max-width: 30%;
     }
     
-    .displaytowns section:nth-child(2) {
-        flex-direction: row-reverse;
-    }
-
     .displaytowns section {
         display: flex;
         flex-direction: row;
@@ -43,14 +39,14 @@
     }
 
     .displaytowns img {
-        max-width: 100%;
+        max-width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .displaytowns section div {
         background: #5caed0;
-        max-width: auto%;
+        max-width: 100%;
         line-height: 250%;
         margin-left: auto;
         margin-right: auto;
