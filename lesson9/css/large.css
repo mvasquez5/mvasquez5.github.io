@@ -79,7 +79,6 @@
         margin-left: auto;
     }
     .displaytowns section div {
-        background: #0B8066;
         max-width: 100%;
         width: 90%;
         line-height: 250%;
@@ -88,8 +87,6 @@
     }
 
     .displaytowns section h4 {
-        color:#ffff;
-        font-family: 'Montserrat', sans-serif;
         font-size: 1rem;
         margin-top: 0px;
         margin-bottom: 0px;
