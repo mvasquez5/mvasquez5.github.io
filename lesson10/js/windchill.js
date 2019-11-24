@@ -1,7 +1,7 @@
 function getWindChill()
 {
-    var temp = parseFloat(document.getElementById('temp').innerHTML);
-    var windSpeed = parseFloat(document.getElementById('windSpeed').innerHTML);
+    var temp = parseFloat(document.getElementById('currentTemperature').innerHTML);
+    var windSpeed = parseFloat(document.getElementById('currentWindSpeed').innerHTML);
     var windchill = document.getElementById('windchill');
 
     if (temp > 50 || windSpeed < 3) {
