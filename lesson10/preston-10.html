@@ -51,11 +51,12 @@
                     <h2 class="textwhite">Weather Summary</h2>
                     <hr>
     
-                    <div ><b>Current: </b><span class="textblue">Rainny</span> </div>
-                    <div ><b>High: </b><span class="textblue" id="temp">44 &#186;F</span> </div>
-                    <div ><b>Wind Chill: </b><span class="textblue" id="windchill">37 &#186;F</span> </div>
-                    <div ><b>Humidity: </b><span class="textblue">80%</span> </div>
-                    <div ><b>Wind Speed: </b><span class="textblue" id="windSpeed">20 mph</span> </div>
+                    <div ><b>Current: </b><span id="currentCondition" class="textblue"></span> </div>
+                    <div ><b>Current temp: </b><span id="currentTemperature" class="textblue"></span> </div>
+                    <div ><b>High: </b><span id="highTemperature" class="textblue">&#186;F</span> </div>
+                    <div ><b>Wind Chill: </b><span id="windchill" class="textblue"> &#186;F</span> </div>
+                    <div ><b>Humidity: </b><span id="currentHumidity" class="textblue"></span> </div>
+                    <div ><b>Wind Speed: </b><span id="currentWindSpeed" class="textblue"> mph</span> </div>
                 </div> 
             </div>
 
@@ -129,6 +130,9 @@
                 <p id="lastMod">Last updated: 
                         <span id="lastmodDate">09/27/2019 21:36:50</span>
                 </p>
+                <p>
+                    Thanks to <a href="https://openweathermap.org/" target="_blank">OpenWeather</a> for providing weather and forecast data
+                </p>
         </footer>
         <p class="w3validator">
             <a href="https://jigsaw.w3.org/css-validator/check/referer">
@@ -141,6 +145,6 @@
             <span class="gr__triangle"></span>
         </span>
         <script src ="js/show_offer.js"></script>
-        <script src ="js/windchill.js"> </script>
+        <<script src="js/prestonapi.js"></script>
     </body>
 </html>
