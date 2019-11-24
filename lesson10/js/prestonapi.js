@@ -23,7 +23,7 @@ fetch(currentWeather)
 
   });
 
-const forecastWeather = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=5604473&appid=2a52f2b81612f3e76e5e91101511d227&units=imperial";
+const forecastWeather = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=2a52f2b81612f3e76e5e91101511d227&units=imperial";
 
 fetch(forecastWeather)
   .then((response) => response.json())
