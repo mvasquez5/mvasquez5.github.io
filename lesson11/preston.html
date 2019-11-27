@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Weather Site Preston</title>
+            <meta name="description" content="Assignment portal page for Mario Vasquez in CIT 230: Web Front-End Development at BYU-Idaho.">
+            <link rel="shortcut icon" href="favicon.ico">
+            <link rel="stylesheet" href="css/normalize.css">
+		    <link rel="stylesheet" href="css/small.css">
+	        <link rel="stylesheet" href="css/middle.css">
+    	    <link rel="stylesheet" href="css/large.css">
+            <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+            <script src ="js/hamburgermenu.js"></script>
+    </head>
+    <body>
+        <div class="offer">
+            <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        <header>
+            <img src="images/logo.png" class="logo" alt="Weather on my Town logo">
+            <section class="headings">
+                    <h1>Weather on my Town</h1>
+                    <p>The Weather on your Town on any time and date</p>
+            </section>
+        </header>
+    
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li ><a href="index.html">Home</a></li>
+                <li class="active"><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <h2>Preston Idaho</h2>
+            <div class="hero">
+                <picture>
+                    <source media="(max-width: 320px)" srcset="images/preston_header_w320.jpg">
+                    <source media="(max-width: 768px)" srcset="images/preston_header_w768.jpg">
+                    <img id="headerimg" src="images/preston_header.jpg" alt="Preston Idaho">
+                </picture>
+    
+                <div class="CurrentWeather">
+                    <h2 class="textwhite">Weather Summary</h2>
+                    <hr>
+    
+                    <div ><b>Current: </b><span id="currentCondition" class="textblue"></span> </div>
+                    <div ><b>Current temp: </b><span id="currentTemperature" class="textblue"></span> <span class="textblue">ºF</span></div>
+                    <div ><b>High: </b><span id="highTemperature" class="textblue"></span> <span class="textblue">ºF</span> </div>
+                    <div ><b>Wind Chill: </b><span id="windchill" class="textblue"> &#186;F</span> </div>
+                    <div ><b>Humidity: </b><span id="currentHumidity" class="textblue"></span> <span class="textblue">%</span></div>
+                    <div ><b>Wind Speed: </b><span id="currentWindSpeed" class="textblue"> mph</span><span class="textblue">MPH</span> </div>
+                </div> 
+            </div>
+
+            <div class ="five-day">
+                <h2 class="textcenter">5 Day Forecast</h2>
+                <table>
+                    <tr>
+                        <th id="day0"></th>
+                        <th id="day1"></th>
+                        <th id="day2"></th>
+                        <th id="day3"></th>
+                        <th id="day4"></th>
+                    </tr>
+                    <tr>
+                        <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon0"></span> <br> <span id="temp0"></span>ºF</td>
+                        <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon1"></span> <br> <span id="temp1"></span>ºF</td>
+                        <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon2"></span> <br> <span id="temp2"></span>ºF</td>
+                        <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon3"></span> <br> <span id="temp3"></span>ºF</td>
+                        <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon4"></span> <br> <span id="temp4"></span>ºF</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="ArticleSection">
+                <img src="images/preston.jpeg" alt="Image of a house" class="articleimage">
+                <h2>The historic Preston Post Office</h2>
+                <span class="authorquote">by Mario Vasquez</span>
+                <p>Located on the edge of the Forest of Bowland in the small, English village of Calder Vale, located at 55 E. Oneida St. in Preston, Idaho, was built in 1940. It was listed on the National Register of Historic Places in 1989 as US Post Office-Preston Main. With the River Calder running right through it, this cottage is set in a tranquil location, ideal for those looking to enjoy its earthy surroundings and peaceful environment.</p>
+
+                <p>Finished to a luxurious standard with a unique set-up, this bespoke property is accessed off a quiet village street and has an off road parking space for one car to the side of the property.</p>
+
+                <p>On entry into the property you arrive into the open plan living space with a fitted kitchen, a dining area and a sitting area where it is furnished to a cosy yet contemporary feel.</p>
+            </div>
+            <div class="contact">
+                <img src="images/map.png" alt="Map of Preston">
+                <h3>Contact Information</h3>
+                <p>645 N State St,</p>
+                <p> Preston, ID 83263, United States</p>
+                <p><span>&#9742; Phone Number: 555-555-555</span></p>
+                <p><span>&#9993; E-mail: info@weatheronmytown.com"</span></p>
+                <span>
+                    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" class="socialmedia"></a>
+                    <a href="https://www.twitter.com/"><img src="images/twitter.png" alt="Twitter" class="socialmedia"></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram" class="socialmedia"></a>
+                    <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="Youtube" class="socialmedia"></a>
+                </span>
+            </div>
+        </main>
+
+        <footer>
+                <p>© <span id="copyrightdate">2019</span> | Mario A. Vasquez | Venezuela | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                <p id="lastMod">Last updated: 
+                        <span id="lastmodDate">09/27/2019 21:36:50</span>
+                </p>
+                <p>
+                    Thanks to <a href="https://openweathermap.org/" target="_blank">OpenWeather</a> for providing weather and forecast data
+                </p>
+        </footer>
+        <p class="w3validator">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="../img/vcss-blue.jpg" alt="Valid CSS!">
+            </a>
+        </p>
+        
+        <span class="gr__tooltip"><span class="gr__tooltip-content"></span>
+            <i class="gr__tooltip-logo"></i>
+            <span class="gr__triangle"></span>
+        </span>
+        <script src ="js/show_offer.js"></script>
+        <script src="js/prestonapi.js"></script>
+        <script src ="js/windchill.js"> </script>
+    </body>
+</html>
