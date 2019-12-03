@@ -4,7 +4,7 @@
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Site Plan | Mario Vasquez | BYU-Idaho</title>
+            <title>Weather Site Fish Haven</title>
             <meta name="description" content="Assignment portal page for Mario Vasquez in CIT 230: Web Front-End Development at BYU-Idaho.">
             <link rel="shortcut icon" href="favicon.ico">
             <link rel="stylesheet" href="css/normalize.css">
@@ -16,7 +16,7 @@
     </head>
     <body>
         <div class="offer">
-            <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+            <p>Saturday = Fish Haven Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
         </div>
         <header>
             <img src="images/logo.png" class="logo" alt="Weather on my Town logo">
@@ -42,20 +42,21 @@
             <h2>Fish Haven</h2>
             <div class="hero">
                 <picture>
-                    <source media="(max-width: 320px)" srcset="images/preston_header_w320.jpg">
-                    <source media="(max-width: 768px)" srcset="images/preston_header_w768.jpg">
-                    <img id="headerimg" src="images/preston_header.jpg" alt="Preston Idaho">
+                    <source media="(max-width: 320px)" srcset="images/fishhaven_header_w320.jpg">
+                    <source media="(max-width: 768px)" srcset="images/fishhaven_header_w768.jpg">
+                    <img id="headerimg" src="images/fishhaven_header.jpg" alt="Fish Haven Idaho">
                 </picture>
     
                 <div class="CurrentWeather">
                     <h2 class="textwhite">Weather Summary</h2>
                     <hr>
     
-                    <div ><b>Current: </b><span class="textblue">Rainny</span> </div>
-                    <div ><b>High: </b><span class="textblue" id="temp">44 &#186;F</span> </div>
-                    <div ><b>Wind Chill: </b><span class="textblue" id="windchill">37 &#186;F</span> </div>
-                    <div ><b>Humidity: </b><span class="textblue">80%</span> </div>
-                    <div ><b>Wind Speed: </b><span class="textblue" id="windSpeed">20 mph</span> </div>
+                    <div ><b>Current: </b><span id="currentCondition" class="textblue"></span> </div>
+                    <div ><b>Current temp: </b><span id="currentTemperature" class="textblue"></span> <span class="textblue">ºF</span></div>
+                    <div ><b>High: </b><span id="highTemperature" class="textblue"></span> <span class="textblue">ºF</span> </div>
+                    <div ><b>Wind Chill: </b><span id="windchill" class="textblue"> &#186;F</span> </div>
+                    <div ><b>Humidity: </b><span id="currentHumidity" class="textblue"></span> <span class="textblue">%</span></div>
+                    <div ><b>Wind Speed: </b><span id="currentWindSpeed" class="textblue"> mph</span><span class="textblue">MPH</span> </div>
                 </div> 
             </div>
 
@@ -63,38 +64,18 @@
                 <h2 class="textcenter">5 Day Forecast</h2>
                 <table>
                     <tr>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
+                        <th id="day0"></th>
+                        <th id="day1"></th>
+                        <th id="day2"></th>
+                        <th id="day3"></th>
+                        <th id="day4"></th>
                     </tr>
                     <tr>
-                        <td>
-                            <img src="images/sunny.png" alt="Cloudy weather">
-                            <br>
-                            <span class="textdarkgray">31° 45°</span>
-                        </td>
-                        <td>
-                            <img src="images/snowy.png" alt="Sunny weather">
-                            <br>
-                            <span class="textdarkgray">0° 10°</span>
-                        </td>
-                        <td>
-                            <img src="images/cloudy.png" alt="Snowy weather">
-                            <br>
-                            <span class="textdarkgray">24° 29°</span>
-                        </td>
-                        <td>
-                            <img src="images/rainny.png" alt="Rainny weather">
-                            <br>
-                            <span class="textdarkgray">25° 30°</span>
-                        </td>
-                        <td>
-                            <img src="images/cloudy.png" alt="Cloudy weather">
-                            <br>
-                            <span class="textdarkgray">24° 29°</span>
-                        </td>
+                        <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon0"></span> <br> <span id="temp0"></span>ºF</td>
+                        <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon1"></span> <br> <span id="temp1"></span>ºF</td>
+                        <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon2"></span> <br> <span id="temp2"></span>ºF</td>
+                        <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon3"></span> <br> <span id="temp3"></span>ºF</td>
+                        <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon4"></span> <br> <span id="temp4"></span>ºF</td>
                     </tr>
                 </table>
             </div>
@@ -102,11 +83,11 @@
                 <img src="images/preston.jpeg" alt="Image of a house" class="articleimage">
                 <h2>The historic Preston Post Office</h2>
                 <span class="authorquote">by Mario Vasquez</span>
-                <p>Velit elit nisi deserunt do ipsum enim. Amet aliqua quis excepteur in voluptate incididunt enim sunt quis officia labore eu. Sit ad cillum mollit est in cillum eu duis ex nostrud velit dolore sint. Do pariatur deserunt in ex eiusmod ea enim est reprehenderit magna tempor. Cupidatat in aliqua duis dolore ex duis. Laborum dolore Lorem eu culpa cillum velit fugiat.</p>
+                <p>Located on the edge of the Forest of Bowland in the small, English village of Calder Vale, located at 55 E. Oneida St. in Preston, Idaho, was built in 1940. It was listed on the National Register of Historic Places in 1989 as US Post Office-Preston Main. With the River Calder running right through it, this cottage is set in a tranquil location, ideal for those looking to enjoy its earthy surroundings and peaceful environment.</p>
 
-                <p>Sint sint reprehenderit ut irure non enim sit enim in nisi. Quis voluptate culpa esse consequat duis consectetur nostrud. Labore sint in consectetur Lorem laborum sint et. Mollit labore aliqua nulla et quis eu. Consequat est dolor veniam Lorem qui sunt eiusmod commodo minim eiusmod ullamco occaecat et. Et ea excepteur anim qui sit magna elit.</p>
+                <p>Finished to a luxurious standard with a unique set-up, this bespoke property is accessed off a quiet village street and has an off road parking space for one car to the side of the property.</p>
 
-                <p>Eiusmod cupidatat sunt nisi nisi ullamco. Laborum ea sit cillum nulla laboris ullamco excepteur aliqua nisi pariatur cillum et eiusmod. Aliquip tempor esse cillum nulla magna duis aliqua Lorem cillum aliqua. Nisi do sit laboris dolor ullamco qui ex pariatur culpa qui velit deserunt.</p>
+                <p>On entry into the property you arrive into the open plan living space with a fitted kitchen, a dining area and a sitting area where it is furnished to a cosy yet contemporary feel.</p>
             </div>
             <div class="contact">
                 <img src="images/map.png" alt="Map of Preston">
@@ -129,6 +110,9 @@
                 <p id="lastMod">Last updated: 
                         <span id="lastmodDate">09/27/2019 21:36:50</span>
                 </p>
+                <p>
+                    Thanks to <a href="https://openweathermap.org/" target="_blank">OpenWeather</a> for providing weather and forecast data
+                </p>
         </footer>
         <p class="w3validator">
             <a href="https://jigsaw.w3.org/css-validator/check/referer">
@@ -141,6 +125,7 @@
             <span class="gr__triangle"></span>
         </span>
         <script src ="js/show_offer.js"></script>
+        <script src="js/prestonapi.js"></script>
         <script src ="js/windchill.js"> </script>
     </body>
 </html>
