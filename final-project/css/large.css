@@ -28,15 +28,6 @@
     h1 {
         font-size: 2.5rem;
     }
-    .ArticleSection img {
-        float: right;
-        margin: 1em;
-    }
-    .gallery {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
     .col3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -63,11 +54,6 @@
         margin: auto;
         grid-gap: 15px;
         padding: 15px;
-    }
-    .gallery {
-        width:100%;
-        display:grid; 
-        grid-template-columns: repeat(3, 1fr);
     }
     picture:hover {
         box-shadow: 10px 10px 10px 10px grey;

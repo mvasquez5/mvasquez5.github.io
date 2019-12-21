@@ -122,24 +122,6 @@ h2 {
     margin: 0;
 }
 
-h4 {
-    color: #E5E9EA;
-    text-align: center;
-    padding: 10px;
-    font-size: .9rem;
-    font-weight: 400;
-    font-weight: bold;
-}
-.hero {
-    position: relative;
-    max-width: 100%;
-    display: block;
-    margin: auto;
-}
-
-#headerimg {
-    max-width: 100%;
-}
 .textwhite {
     color: #ffffff;
 }
@@ -155,38 +137,15 @@ h4 {
 .textcenter {
     text-align: center;
 }
-.ArticleSection img {
-    max-width: 100%;
-    width: 560px;
-    display: block;
-    margin: auto;
-}
+
 .socialmedia {
     max-width: 100%;
     width: 40px;
 }
-table {
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-table td {
-    border:1px solid gray;
-    border-spacing: 5px 10px;
-}
-.five-day {
-    display: none;
-}
+
+
 .contact {
     display: none;
-}
-.offer {
-    background-color: yellowgreen;
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 700;
-    padding: 10px;
 }
 
 picture {
@@ -205,19 +164,6 @@ picture {
 img {
     filter: blur(0em);
     transition: filter 0.5s;
-}
-
-.gallery {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr;
-}
-
-.radiotext {
-    margin-right:1.5rem;
-    margin-left: .5rem;
-    padding: 8px;
-    margin:8px;
 }
 
 input#severity{
@@ -249,46 +195,6 @@ input#severity{
     margin: auto;
 }
 
-  .displaytowns section div:nth-child(1) {
-    max-width: 100%;
-  }
-
-  .displaytowns section {
-    display: block;
-    text-align: center;
-    background: #5caed0;
-    border-radius: 3px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-width: 100%;
-    padding: 20px;
-    margin: 10px;
-}
-
-.displaytowns img {
-    max-width: 100%;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-}
-.displaytowns section div {
-    background: #5caed0;
-    font-family: 'Montserrat', sans-serif;
-    max-width: 100%;
-    width: 90%;
-    line-height: 250%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.displaytowns section h4 {
-    color:#ffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: 100%;
-}
 
 .displaylinks {
     color: #000000;
@@ -301,12 +207,7 @@ input#severity{
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
-    }
-.gallery {
-    display:block;
-    width:auto;
-    grid-template-columns: 1fr;
-} 
+}
 
 fieldset div {
     display: flex;
