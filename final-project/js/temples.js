@@ -6,7 +6,7 @@ fetch(requestURL)
     })
     .then(function (jsonObj) {
         console.table(jsonObj);
-        const prophets = jsonObj['temples'];
+        const temples = jsonObj['temples'];
         for (let i = 0; i < temples.length; i++) {
 
             let temple = document.createElement('section');
