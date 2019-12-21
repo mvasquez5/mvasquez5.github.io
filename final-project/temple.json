@@ -14,7 +14,7 @@
         "services3": "Patron housing available",
         "services4": "Distribution center nearby",
         "image": "bogota_colombia_temple_lds.jpeg",
-      "info": "Bogota Temple is a beautiful temple ubicated in the center of the city. It has beautiful gardens and is near malls. We are located within the temple grounds.",
+      "info": "Bogota Temple is a beautiful temple ubicated in the center of the city. It has beautiful gardens and is near malls. We are located within the temple grounds."
     },
     {
       "name": "Caracas Venezuela Temple",
@@ -30,7 +30,7 @@
         "services3": "No patron housing available",
         "services4": "Distribution center nearby",
         "image": "caracas_venezuela_temple.jpeg",
-      "info": "Caracas temple is a small but beautiful temple located in the capital of Venezuela. We are located near the temple and are waiting to offer you all our services in this beautiful location.",
+      "info": "Caracas temple is a small but beautiful temple located in the capital of Venezuela. We are located near the temple and are waiting to offer you all our services in this beautiful location."
     },
     {
         "name": "Lima Peru Temple",
@@ -46,7 +46,7 @@
         "services3": "Patron housing available",
         "services4": "Distribution center nearby",
         "image": "lima_peru_temple_lds.jpg",
-        "info": "Lima temple is a small but beautiful temple located in the capital of Peru. We are located near the temple and are waiting to offer you all our services in this beautiful location.",
+        "info": "Lima temple is a small but beautiful temple located in the capital of Peru. We are located near the temple and are waiting to offer you all our services in this beautiful location."
     },
     {
         "name": "Guayaquil Ecuador Temple",
@@ -54,7 +54,7 @@
         "dedicated" : "1 August 1999",
         "address1": "6ta y Av. Rodrigo Chavez",
         "address2": "Principado de las Lomas",
-        "address3": "Templo de Guayaquil, Urdesa Norte, — Guayaquil, Ecuador",
+        "address3": "Templo de Guayaquil, Urdesa Norte, — Guayaquil, Ecuador"
         "phone": "(593) 4-371-8100",
         "email": "guayaquiltemple@churchofjesuschrist.org",
         "services1": "Clothing rental available",
@@ -62,7 +62,7 @@
         "services3": "Patron housing available",
         "services4": "Distribution center nearby",
         "image": "guayaquil_ecuador_temple_lds.jpeg",
-        "info": "Quito Temple is a beautiful temple ubicated in the center of the city. It has beautiful gardens and is near malls. We are located within the temple grounds.",
+        "info": "Quito Temple is a beautiful temple ubicated in the center of the city. It has beautiful gardens and is near malls. We are located within the temple grounds."
     }
 ]
 }
