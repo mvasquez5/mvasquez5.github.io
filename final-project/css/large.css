@@ -1,0 +1,92 @@
+/* Wide Desktop view*/
+@media only screen and (min-width: 60em) {
+    nav {
+        margin-left: 20px;
+    }
+    
+    .navigation {
+        display: flex;
+        float: right;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigatoin li a {
+        color: #4D83FF;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    .ArticleSection img {
+        float: right;
+        margin: 1em;
+    }
+    
+    .gallery {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .col3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-self: center;
+        text-align: center;
+        margin: auto;
+        grid-gap: 15px;
+        padding: 15px;
+    }
+    .col2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-self: center;
+        text-align: center;
+        margin: auto;
+        grid-gap: 15px;
+        padding: 15px;
+    }
+    .gallery {
+        width:100%;
+        display:grid; 
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .displaytowns {
+        display:grid; 
+        grid-template-columns: auto auto auto;
+    }
+    input {
+        width: 100%;
+        margin-bottom: 3px;
+    }
+    .children  {
+        width: 30%;
+        float: right;
+    }
+    .adults  {
+        width: 30%;
+    }
+    .rooms  {
+        width: 30%;
+        float: left;
+    }
+    .checkin  {
+        width: 45%;
+        float: left;
+    }
+    .checkout  {
+        width: 45%;
+        float: right;
+    }
+}

@@ -1,0 +1,63 @@
+/* Tablet View CSS */
+@media only screen and (min-width: 32.5em) {
+    .five-day {
+        display: block;
+    }
+    .contact {
+        display: block;
+    }
+
+    .gallery {
+        display: grid;
+        margin: 0 auto;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .displaytowns {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    
+    .displaytowns section div:nth-child(1) {
+        max-width: 30%;
+    }
+    
+    .displaytowns section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        background: #5caed0;
+        border-radius: 3px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-width: 100%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .displaytowns img {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .displaytowns section div {
+        max-width: 100%;
+        line-height: 250%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .displaytowns section h4 {
+        font-size: 1rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 100%;
+    }
+
+}
