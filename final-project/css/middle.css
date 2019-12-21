@@ -55,6 +55,15 @@
         grid-gap: 15px;
         padding: 15px;
     }
+    .temples {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-self: center;
+        text-align: center;
+        margin: auto;
+        grid-gap: 15px;
+        padding: 15px;
+    }
     .gallery {
         width:100%;
         display:grid; 
