@@ -42,10 +42,10 @@ fetch(requestURL)
             .then((response) => response.json())
             .then((jsObject) => {
                 currentCondition.textContent = 'Condition: ' + jsObject.weather[0].main;
-                currentTemperature.textContent = 'Current temp: ' + jsObject.main.temp.toFixed(0);
-                highTemperature.textContent = 'High: ' + jsObject.main.temp_max.toFixed(0);
-                currentHumidity.textContent = 'Humidity: ' + jsObject.main.humidity.toFixed(0);
-                currentWindSpeed.textContent = 'Wind Speed: ' + jsObject.wind.speed.toFixed(0);
+                currentTemperature.textContent = 'Current temp: ' + jsObject.main.temp.toFixed(0) + ' ºF';
+                highTemperature.textContent = 'High: ' + jsObject.main.temp_max.toFixed(0) + ' ºF';
+                currentHumidity.textContent = 'Humidity: ' + jsObject.main.humidity.toFixed(0) + '%';
+                currentWindSpeed.textContent = 'Wind Speed: ' + jsObject.wind.speed.toFixed(0) + ' MPH';
             });  
 
             div.setAttribute('class', "info");
