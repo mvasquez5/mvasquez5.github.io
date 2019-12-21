@@ -27,6 +27,25 @@ fetch(requestURL)
             let services2 = document.createElement('p');
             let services3 = document.createElement('p');
             let services4 = document.createElement('p');
+            let closed = document.createElement('p');
+            let currentCondition = document.createElement('p');
+            let currentTemperature = document.createElement('p');
+            let highTemperature = document.createElement('p');
+            let currentHumidity = document.createElement('p');
+            let currentWindSpeed = document.createElement('p');
+            
+
+            const currentWeather = "https://api.openweathermap.org/data/2.5/weather?id="+ temples[i].id + "&appid=2a52f2b81612f3e76e5e91101511d227&units=imperial";
+
+            fetch(currentWeather)
+            .then((response) => response.json())
+            .then((jsObject) => {
+                currentCondition.textContent = 'Condition: ' + jsObject.weather[0].main;
+                currentTemperature.textContent = 'Current temp: ' + jsObject.main.temp.toFixed(0);
+                highTemperature.textContent = 'High: ' + jsObject.main.temp_max.toFixed(0);
+                currentHumidity.textContent = 'Humidity: ' + jsObject.main.humidity.toFixed(0);
+                currentWindSpeed.textContent = 'Wind Speed: ' + jsObject.wind.speed.toFixed(0);
+            });  
 
             div.setAttribute('class', "info");
             h2.textContent = temples[i].name;
@@ -45,6 +64,7 @@ fetch(requestURL)
             services2.textContent = temples[i].services2;
             services3.textContent = temples[i].services3;
             services4.textContent = temples[i].services4;
+            closed.textContent =  'Closed on: ' + temples[i].closed;
 
             temple.appendChild(div);
             temple.appendChild(h2);
@@ -57,10 +77,18 @@ fetch(requestURL)
             temple.appendChild(address3);
             temple.appendChild(phone);
             temple.appendChild(email);
+            temple.appendChild(br);
             temple.appendChild(services1);
             temple.appendChild(services2);
             temple.appendChild(services3);
             temple.appendChild(services4);
+            temple.appendChild(closed);
+            temple.appendChild(br);
+            temple.appendChild(currentCondition);
+            temple.appendChild(currentTemperature);
+            temple.appendChild(highTemperature);
+            temple.appendChild(currentHumidity);
+            temple.appendChild(currentWindSpeed);
 
             document.querySelector('div.temples').appendChild(temple);
         }
