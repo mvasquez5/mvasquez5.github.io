@@ -33,6 +33,8 @@ fetch(requestURL)
             image.setAttribute('src', temples[i].image);
             image.setAttribute('alt', temples[i].name);
             image.setAttribute('title', temples[i].name);
+            image.setAttribute('width', "300");
+            image.setAttribute('height', "200");
             location.textContent = temples[i].location;
             dedicated.textContent = temples[i].dedicated;
             address1.textContent = temples[i].address1;
