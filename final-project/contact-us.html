@@ -34,16 +34,26 @@
                 <section>
                     <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
                     <p>(515)318-483</p><br>
-                    <form>
-                        <label for="firstname">Name</label>
-                        <input type="text" name="firstname" id="firstname" class="hotelname" placeholder="First Name"><br>
-                        <label for="lastname">Location</label>
-                        <input type="text" name="lastname" id="lastname" class="location" placeholder="Last Name"><br>
-                        <label for="phone">Location</label>
-                        <input type="text" name="phone" id="phone" class="hotelname" placeholder="Phone"><br>
-                        <label for="comments">Location</label>
-                        <input type="textarea" name="comments" id="comments" class="comments" placeholder="Comments"><br>
-                        <input type="submit" value="Submit">
+                    <form action="thanks.html">
+                        <fieldset> 
+                        <legend>Information Request</legend>
+                        <div class="row">
+                            <div class="column">
+                                <label for="firstname">Name</label>
+                                <input type="text" name="firstname" id="firstname" class="hotelname" placeholder="First Name" required>
+                                <label for="lastname">Location</label>
+                                <input type="text" name="lastname" id="lastname" class="location" placeholder="Last Name" required>
+                                <label for="phone">Phone</label>
+                                <input type="text" name="phone" id="phone" placeholder="Phone">
+                                <label for="phone">Phone</label>
+                                <input type="text" name="phone" id="phone" placeholder="Phone">
+                                <label for="comments">Comments</label>
+                                <textarea name="comments" id="comments" class="comments" placeholder="Comments"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="Submit" class="button">
+                        </div>
                     </form>    
                 </section>
                 </div>
