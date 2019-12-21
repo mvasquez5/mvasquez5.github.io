@@ -89,4 +89,16 @@
         width: 45%;
         float: right;
     }
+    div.input-group {
+        display: flex;
+    }
+    
+    label {
+        white-space: nowrap;
+    }
+    
+    input {
+        display: inline-block; // for safari
+        flex: 1;
+    }
 }
