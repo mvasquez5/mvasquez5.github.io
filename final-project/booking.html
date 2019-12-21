@@ -29,36 +29,77 @@
         </header>
 
         <main>
-                <section>
-                    <div class="input-group">  
-                    <form>
-                        <label for="hotelname">Hotel Name</label>
-                        <input type="text" name="hotelname" id="hotelname" class="hotelname" placeholder="Hotel Name"><br>
-                        <label for="Location">Location</label>
-                        <input type="text" name="Location" id="Location" class="location" placeholder="Location"><br>
-                        <label for="checkin" class="checkin">Check-In</label>
-                        <label for="checkout" class="checkout">Check-Out</label>
-                        <input type="text" name="checkin" id="checkin" class="checkin" placeholder="Check-In">
-                        <input type="text" name="checkout" id="checkout" class="checkout" placeholder="Check-Out"><br>
-                        <label for="name">Full Name</label>
-                        <input type="text" name="name" id="name" class="name" placeholder="Full Name"><br>
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email" class="email" placeholder="Email"><br>
-                        <label for="phone">Phone</label>
-                        <input type="text" name="phone" id="phone" class="phone" placeholder="Phone"><br>
-                        <label for="country">Country</label>
-                        <input type="text" name="country" id="country" class="country" placeholder="Country"><br>
-                        <label for="rooms" class="rooms">Rooms</label>
-                        <label for="adults" class="adults">Adults</label>
-                        <label for="children" class="children">Children</label>
-                        <input type="text" name="rooms" id="rooms" class="rooms" placeholder="Rooms">
-                        <input type="text" name="adults" id="adults" class="adults" placeholder="Adults">
-                        <input type="text" name="children" id="children" class="children" placeholder="Children"><br>
-                        <label for="comments">Comments</label>
-                        <input type="textarea" name="comments" id="comments" class="comments" placeholder="Comments"><br>
-                        <input type="submit" value="Book Now">
+                <section> 
+                    <form action="thanks.html">
+                        <fieldset> 
+                            <legend>Booking Request</legend>
+                            <div class="row">
+                                <div class="column">
+                                    <label for="hotelname">Hotel Name</label>
+                                    <input type="text" name="hotelname" id="hotelname" class="hotelname" placeholder="Hotel Name" required>
+                                </div>
+                            
+                                <div class="column">
+                                    <label for="Location">Location</label>
+                                    <input type="text" name="Location" id="Location" class="location" placeholder="Location" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <input type="text" name="checkin" id="checkin" placeholder="Check-In" required>
+                                    <label for="checkin" >Check-In</label>
+                                </div>
+                                <div class="column">
+                                    <input type="text" name="checkout" id="checkout" placeholder="Check-Out" required>
+                                    <label for="checkout" >Check-Out</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <input type="text" name="name" id="name" class="name" placeholder="Full Name" required>
+                                    <label for="name">Full Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <input type="text" name="email" id="email" class="email" placeholder="Email" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="column">
+                                    <input type="text" name="phone" id="phone" class="phone" placeholder="Phone">
+                                    <label for="phone">Phone</label>
+                                </div>
+                                <div class="column">
+                                    <input type="text" name="country" id="country" class="country" placeholder="Country">
+                                    <label for="country">Country</label>
+                                </div>
+                            </div>
+                            <div="row">
+                                <div class="column">
+                                    <input type="text" name="rooms" id="rooms" placeholder="Rooms" required>
+                                    <label for="rooms" >Rooms</label>
+                                </div>
+                                <div class="column">
+                                    <input type="text" name="adults" id="adults"  placeholder="Adults" required>
+                                    <label for="adults" >Adults</label>
+                                </div>
+                                <div class="column">
+                                    <input type="text" name="children" id="children"  placeholder="Children">
+                                    <label for="children" >Children</label>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="column">
+                                    <textarea name="comments" id="comments" rows="5" >Comments </textarea>
+                                    <label for="comments">Comments</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <input type="submit" value="Book Now" class="button">
+                            </div>
+                        </fieldset>
                     </form>  
-                   </div>   
                 </section>
         </main>
 

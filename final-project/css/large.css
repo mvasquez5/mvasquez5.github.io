@@ -62,43 +62,5 @@
         grid-template-columns: repeat(3, 1fr);
     }
     
-    .displaytowns {
-        display:grid; 
-        grid-template-columns: auto auto auto;
-    }
-    input {
-        width: 100%;
-        margin-bottom: 3px;
-    }
-    .children  {
-        width: 30%;
-        float: right;
-    }
-    .adults  {
-        width: 30%;
-    }
-    .rooms  {
-        width: 30%;
-        float: left;
-    }
-    .checkin  {
-        width: 45%;
-        float: left;
-    }
-    .checkout  {
-        width: 45%;
-        float: right;
-    }
-    div.input-group {
-        display: flex;
-    }
-    
-    label {
-        white-space: nowrap;
-    }
-    
-    input {
-        display: inline-block; // for safari
-        flex: 1;
-    }
+
 }
