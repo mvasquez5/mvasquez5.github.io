@@ -1,63 +1,92 @@
 /* Tablet View CSS */
 @media only screen and (min-width: 32.5em) {
-    .five-day {
-        display: block;
+    nav {
+        margin-left: 20px;
     }
-    .contact {
+    
+    .navigation {
+        display: flex;
+        float: right;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
         display: block;
     }
 
+    .navigatoin li a {
+        color: #4D83FF;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    .ArticleSection img {
+        float: right;
+        margin: 1em;
+    }
+    
     .gallery {
         display: grid;
-        margin: 0 auto;
         width: 100%;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    .displaytowns {
+    .col3 {
         display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-    
-    .displaytowns section div:nth-child(1) {
-        max-width: 30%;
-    }
-    
-    .displaytowns section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        justify-self: center;
         text-align: center;
-        background: #5caed0;
-        border-radius: 3px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        max-width: 100%;
-        padding: 20px;
-        margin: 10px;
+        margin: auto;
+        grid-gap: 15px;
+        padding: 15px;
     }
-
-    .displaytowns img {
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+    .col2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-self: center;
+        text-align: center;
+        margin: auto;
+        grid-gap: 15px;
+        padding: 15px;
     }
-
-    .displaytowns section div {
-        max-width: 100%;
-        line-height: 250%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
+    .gallery {
+        width:100%;
+        display:grid; 
+        grid-template-columns: repeat(2, 1fr);
     }
     
-    .displaytowns section h4 {
-        font-size: 1rem;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        line-height: 100%;
+    .displaytowns {
+        display:grid; 
+        grid-template-columns: auto auto auto;
     }
-
+    input {
+        width: 100%;
+        margin-bottom: 3px;
+    }
+    .children  {
+        width: 30%;
+        float: right;
+    }
+    .adults  {
+        width: 30%;
+    }
+    .rooms  {
+        width: 30%;
+        float: left;
+    }
+    .checkin  {
+        width: 45%;
+        float: left;
+    }
+    .checkout  {
+        width: 45%;
+        float: right;
+    }
 }
