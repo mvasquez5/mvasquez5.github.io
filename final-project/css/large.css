@@ -39,11 +39,11 @@
     }
     .col2 {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         justify-self: center;
         text-align: center;
         margin: auto;
-        grid-gap: 15px;
+        grid-gap: 30px;
         padding: 15px;
     }
     .temples {
