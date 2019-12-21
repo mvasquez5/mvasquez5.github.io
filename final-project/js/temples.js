@@ -48,7 +48,7 @@ fetch(requestURL)
             temple.appendChild(div);
             temple.appendChild(h2);
             temple.appendChild(picture);
-            temple.appendChild(image);
+            picture.appendChild(image);
             temple.appendChild(location);
             temple.appendChild(dedicated);
             temple.appendChild(address1);
