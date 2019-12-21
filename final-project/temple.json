@@ -13,7 +13,7 @@
         "services2": "Cafeteria available",
         "services3": "Patron housing available",
         "services4": "Distribution center nearby",
-        "image": "/img/bogota_colombia_temple_lds.jpeg",
+        "image": "/final-project/img/bogota_colombia_temple_lds.jpeg",
       "info": "Bogota Temple is a beautiful temple ubicated in the center of the city. It has beautiful gardens and is near malls. We are located within the temple grounds."
     },
     {
@@ -29,7 +29,7 @@
         "services2": "No cafeteria available",
         "services3": "No patron housing available",
         "services4": "Distribution center nearby",
-        "image": "/img/caracas_venezuela_temple.jpeg",
+        "image": "/final-project/img/caracas_venezuela_temple.jpeg",
       "info": "Caracas temple is a small but beautiful temple located in the capital of Venezuela. We are located near the temple and are waiting to offer you all our services in this beautiful location."
     },
     {
@@ -45,7 +45,7 @@
         "services2": "Cafeteria available",
         "services3": "Patron housing available",
         "services4": "Distribution center nearby",
-        "image": "/img/lima_peru_temple_lds.jpg",
+        "image": "/final-project/img/lima_peru_temple_lds.jpg",
         "info": "Lima temple is a small but beautiful temple located in the capital of Peru. We are located near the temple and are waiting to offer you all our services in this beautiful location."
     },
     {
@@ -61,7 +61,7 @@
         "services2": "Cafeteria available",
         "services3": "Patron housing available",
         "services4": "Distribution center nearby",
-        "image": "/img/guayaquil_ecuador_temple_lds.jpeg",
+        "image": "/final-project/img/guayaquil_ecuador_temple_lds.jpeg",
         "info": "Quito Temple is a beautiful temple ubicated in the center of the city. It has beautiful gardens and is near malls. We are located within the temple grounds."
     }
 ]
