@@ -30,7 +30,7 @@ fetch(requestURL)
 
             div.setAttribute('class', "info");
             h2.textContent = temples[i].name;
-            image.setAttribute('src', temples[i].image);
+            image.setAttribute('data-src', temples[i].image);
             image.setAttribute('alt', temples[i].name);
             image.setAttribute('title', temples[i].name);
             image.setAttribute('class', "temple");
