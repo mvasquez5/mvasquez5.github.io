@@ -33,6 +33,7 @@ fetch(requestURL)
             let highTemperature = document.createElement('p');
             let currentHumidity = document.createElement('p');
             let currentWindSpeed = document.createElement('p');
+            let weather = document.createElement('p');
             
 
             const currentWeather = "https://api.openweathermap.org/data/2.5/weather?id="+ temples[i].id + "&appid=2a52f2b81612f3e76e5e91101511d227&units=imperial";
@@ -65,6 +66,7 @@ fetch(requestURL)
             services3.textContent = temples[i].services3;
             services4.textContent = temples[i].services4;
             closed.textContent =  'Closed on: ' + temples[i].closed;
+            weather.textContent =  'Weather:';
 
             temple.appendChild(div);
             temple.appendChild(h2);
@@ -84,6 +86,7 @@ fetch(requestURL)
             temple.appendChild(services4);
             temple.appendChild(closed);
             temple.appendChild(br);
+            temple.appendChild(weather);
             temple.appendChild(currentCondition);
             temple.appendChild(currentTemperature);
             temple.appendChild(highTemperature);
