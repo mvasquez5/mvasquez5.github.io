@@ -35,13 +35,13 @@ fetch(requestURL)
             image.setAttribute('title', temples[i].name);
             image.setAttribute('class', "temple");
             location.textContent = temples[i].location;
-            dedicated.textContent = temples[i].dedicated;
-            address1.textContent = temples[i].address1;
+            dedicated.textContent = 'Dedicated: ' + temples[i].dedicated;
+            address1.textContent = 'Address: ' + temples[i].address1;
             address2.textContent = temples[i].address2;
             address3.textContent = temples[i].address3;
             phone.textContent = 'Telephone: ' + temples[i].phone;
-            email.textContent = temples[i].email;
-            services1.textContent = temples[i].services1;
+            email.textContent = 'Email: ' +temples[i].email;
+            services1.textContent = 'Services: ' +temples[i].services1;
             services2.textContent = temples[i].services2;
             services3.textContent = temples[i].services3;
             services4.textContent = temples[i].services4;
