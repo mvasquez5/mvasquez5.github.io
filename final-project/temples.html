@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Weather Site Home Page</title>
+            <meta name="description" content="Assignment portal page for Mario Vasquez in CIT 230: Web Front-End Development at BYU-Idaho.">
+            <link rel="shortcut icon" href="favicon.ico">
+            <link rel="stylesheet" href="css/normalize.css">
+		    <link rel="stylesheet" href="css/small.css">
+	        <link rel="stylesheet" href="css/middle.css">
+    	    <link rel="stylesheet" href="css/large.css">
+            <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.png" class="logo" alt="Temple Inn & suites">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li ><a href="temples.html">Temples</a></li>
+                    <li><a href="services.html">Services</a></li>   
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+           <div class="banner-home">
+
+           </div>
+           <div class="col3">
+                <section>
+                    <img src="img/lds-temple-services1.jpg" alt="Services Temple Inn and services" title="Services Temple Inn and services" class="image">
+                </section>
+                <section>
+                    <p>Temple Inn and suites offer the best services to help you have a great experience when visit Last Days Saints Temples all around the world. We have 80 years of experience in the hotel industry. We are also members of the church who loves service and understand the importance of the temple for your family’s life.</p>
+                </section>
+                <section>
+                    <form>
+                        <label for="hotelname">Hotel Name</label>
+                        <input type="text" name="hotelname" id="hotelname" class="hotelname" placeholder="Hotel Name"><br>
+                        <label for="Location">Location</label>
+                        <input type="text" name="Location" id="Location" class="location" placeholder="Location"><br>
+                        <label for="checkin" class="checkin">Check-In</label>
+                        <label for="checkout" class="checkout">Check-Out</label>
+                        <input type="text" name="checkin" id="checkin" class="checkin" placeholder="Check-In">
+                        <input type="text" name="checkout" id="checkout" class="checkout" placeholder="Check-Out"><br>
+                        <label for="rooms" class="rooms">Rooms</label>
+                        <label for="adults" class="adults">Adults</label>
+                        <label for="children" class="children">Children</label>
+                        <input type="text" name="rooms" id="rooms" class="rooms" placeholder="Rooms">
+                        <input type="text" name="adults" id="adults" class="adults" placeholder="Adults">
+                        <input type="text" name="children" id="children" class="children" placeholder="Children"><br>
+                        <input type="submit" value="Book Now">
+                    </form>    
+                </section>
+                <section>
+                    <div class="info">
+                        <h2>Long-term Accommodations</h2>
+                        <p>We have comfortable and cheap accommodations with kitchenette suites for full-time temple missionaries.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="info">
+                        <h2>Wedding receptions</h2>
+                        <p>You can have the reception of your dreams with our wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="info">
+                        <h2>Family Search Center </h2>
+                        <p>Our Family search support personal will help you with your family search and ordinance work in our family search center.</p>
+                    </div>
+                </section>
+           </div>
+           <div class="col2">
+            <section>
+                <div class="info">
+                    <h2>Bogota Temple</h2>
+                    <picture><img class="imgFrame" alt="Services Temple Inn and services" src="img/temple-bogota.jpg"></picture>
+                    <p>Bogota Temple is a beautiful temple ubicated in the center of the city. It has beautiful gardens and is near malls. We are located within the temple grounds.</p>
+                </div>
+            </section>
+            <section>
+                <div class="info">
+                    <h2>Caracas Temple</h2>
+                    <picture><img class="imgFrame" alt="Services Temple Inn and services" src="img/temple-caracas.jpg"></picture>
+                    <p>Caracas temple is a small but beautiful temple located in the capital of Venezuela. We are located near the temple and are waiting to offer you all our services in this beautiful location.</p>
+                </div>
+            </section>
+           </div>
+        </main>
+
+
+        <footer>
+            <div class="col2">
+                <p>© <span id="copyrightdate">2019</span> - Temples Inn & Suites </p>
+                <p>4800 Montgomery Ln #300, Bethesda </p>
+            </div>    
+            <script src ="js/hamburgermenu.js"></script>
+        </footer>
+    </body>
+</html>
