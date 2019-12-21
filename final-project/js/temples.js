@@ -35,6 +35,8 @@ fetch(requestURL)
             image.setAttribute('title', temples[i].name);
             image.setAttribute('width', "300");
             image.setAttribute('height', "200");
+            image.setAttribute('object-fit', "cover");
+            image.setAttribute('object-position', "100% 0");
             location.textContent = temples[i].location;
             dedicated.textContent = temples[i].dedicated;
             address1.textContent = temples[i].address1;
